@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom'; // es un componente que nos permite conectar el store con el componente
+import {BrowserRouter, Route, Routes} from 'react-router-dom'; // es un componente que nos permite conectar el store con el componente
 import Home from '../src/components/Home';
 import LandingPage from './components/LandingPage';
 import DogCreate from "./components/DogCreate";
@@ -15,17 +15,14 @@ function App() {
 
   return (
     <BrowserRouter> 
-    <div className="App">
-    <Switch>
+    <Routes>
     <Route path='/' element={<LandingPage />} />
     <Route path='/home' element={<Home />} />  
     <Route path='/dogs'element={<DogCreate />} />
     <Route path='/home/:id' element={<Details />} /> 
     <Route path ='/about' element = {<About/>}/>
     <Route path='/favorites'element={<Favorites />} />
-    </Switch>
-    </div>
-
+    </Routes>
   </BrowserRouter>
   
   );
