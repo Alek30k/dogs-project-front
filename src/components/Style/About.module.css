@@ -1,0 +1,57 @@
+.gral{
+    width: 100vw;
+    height: 100vh;
+    background-color: #1273a0;
+    font-size: 15px;
+    text-decoration: 'none';
+    color:#fcf7f7;
+    position: relative;
+ }
+
+ .texto{
+     width: 600px;
+     height: auto;
+     display: inline-block;
+     align-items: center;
+     border-bottom: #fcf7f7 3px solid;
+     margin-bottom: 20px;
+     margin-top: 20px;
+     line-height: 30px;
+ }
+
+ .contacto {
+    display: flex;
+    justify-content: center;
+ }
+ .contacto:hover {
+    cursor: pointer;
+ }
+ .contact:hover {
+    transform: scale(1.2);
+ }
+
+ span {
+   color: rgb(201, 166, 9);
+ }
+
+ .link{
+   position:absolute;
+   left: 50px;
+   top: 30px;
+   background: rgb(243, 250, 245);
+   border: none;
+   border-radius: 5px;
+ }
+
+ .link:hover {
+cursor: pointer; 
+color: #fcf7f7;
+background: #000;
+transform: scale(1.2);
+}
+
+
+ 
+
+ 
+

@@ -1,0 +1,24 @@
+@media (max-width: 864px){
+    .headerMobile {
+        display: block;
+        background-color: rgba(26, 164, 219, 0.8);
+    }
+    .headerDesk {
+        display: none;
+    }
+    .mobileNav{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+}
+
+@media (min-width: 864px){
+    .headerMobile {
+        display: none;
+    }
+    .headerDesk {
+        display: block;
+    }
+    
+}

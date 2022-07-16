@@ -1,0 +1,73 @@
+.form{
+    width: 95%;
+    height: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgb(0,0, 0, 0.2);
+    overflow: hidden;
+    color: rgb(241, 236, 236);
+    font-size: 15px;
+    margin-left: 32px;
+    margin-top: 25px;
+    background: url('../imagenes/dogCreate.jpg') no-repeat 0;
+    background-size:cover;
+}  
+
+.form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+   
+}
+
+ .form  form input {
+    display: flex;
+    justify-content: center;
+    /* left: 30%; */
+    background-color: #fff;
+    /* border: 1px solid rgb(8, 233, 165); */
+    border-radius: 3px;
+    border: none;
+    font-weight: bolder;
+    width: 200px;
+    height: 25px;
+} 
+
+.button {
+    padding: 5px 20px;
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.link{
+    position:absolute;
+    left: 90px;
+    top: 60px;
+    background: rgb(243, 250, 245);
+    border: none;
+    border-radius: 5px;
+  }
+ 
+  .link:hover {
+ cursor: pointer; 
+ color: #fcf7f7;
+ background: #000;
+ transform: scale(1.2);
+ }
+
+ .deletedbtn {
+    display: flex;
+    position: absolute;
+    right: 150px;
+    gap: 30px;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+   background: rgb(99, 202, 202);
+ }

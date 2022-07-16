@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Carter+One&family=Concert+One&family=Dancing+Script:wght@700&family=Lobster&family=Merriweather+Sans:ital,wght@1,800&family=Oxygen:wght@700&family=Quicksand:wght@700&family=Titan+One&display=swap');
+*{
+ user-select: none;
+ font-family: 'Merriweather Sans', sans-serif;
+ text-decoration: none;
+ text-align: center;
+}
+
+body {
+ background-size: cover;
+ font-family: 'Merriweather Sans', sans-serif;
+ margin: 0;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+/* code {
+ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+   monospace;
+}
+*/

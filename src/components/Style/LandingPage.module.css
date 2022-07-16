@@ -1,0 +1,81 @@
+/*crea un backgound con una imagen de un Yorkshire*/
+.landingpage {
+    background-image: url('../imagenes/landingPage.jpg');
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  
+  .btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 10px 15px;
+      font-size: 18px;
+    border-radius: 50px;
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+    text-align: center;
+      left: 14%;
+      top: 60%;
+  
+  }
+  
+  .btn:hover {
+    box-shadow: 0 0 5px 0 #3498db inset, 0 0 5px 2px #3498db;
+    color: blue;
+    background-size: 8%;
+    font-size: 20px; 
+  }
+  
+   
+   
+  .textgradient {
+      position: absolute;
+      color: transparent;
+      background-image:repeating-linear-gradient(to left, #FFD700, #7B68EE, #3498db, #90ddb0, #9b4dbe, #FFD700 );    
+      background-clip: text;
+      animation: color 3s linear infinite;
+      background-size: 500%;
+      font-size: 60px; 
+      top: 40px;
+      left: 60px;
+  }
+  
+  @keyframes color {
+      from {
+          background-position: 0% 50%;
+      }
+  
+      to {
+          background-position: 100% 50%;
+      }
+  }
+  
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
