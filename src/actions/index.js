@@ -1,10 +1,13 @@
 import axios from "axios";
 export function getDogs() {
-
   return async function (dispatch) {
     try {
-      var json = await axios("https://dogs-project-ale.herokuapp.com/dogs"); //aca es donde se conecta el back con el front
-      let temperaments = await axios("https://dogs-project-ale.herokuapp.com/temperament");
+      var json = await axios(
+        "https://dogs-project-back-production.up.railway.app/"
+      ); //aca es donde se conecta el back con el front
+      let temperaments = await axios(
+        "https://dogs-project-back-production.up.railway.app/"
+      );
 
       return dispatch({
         type: "GET_DOGS",
@@ -26,7 +29,10 @@ export function filterDogsbyName(payload) {
 
 export function getTemperaments() {
   return async function (dispatch) {
-    let info = await axios("https://dogs-project-ale.herokuapp.com/temperament", {});
+    let info = await axios(
+      "https://dogs-project-back-production.up.railway.app/temperament",
+      {}
+    );
     return dispatch({
       type: "GET_TEMPERAMENTS",
       payload: info.data,
@@ -36,7 +42,10 @@ export function getTemperaments() {
 
 export function postDog(payload) {
   return async function (dispatch) {
-    const response = await axios.post("https://dogs-project-ale.herokuapp.com/dog", payload);
+    const response = await axios.post(
+      "https://dogs-project-back-production.up.railway.app/dog",
+      payload
+    );
 
     return response;
   };
@@ -66,7 +75,9 @@ export function filterCreatedOrApi(payload) {
 export function getNameDogs(name) {
   return async function (dispatch) {
     try {
-      let json = await axios.get("https://dogs-project-ale.herokuapp.com/dogs?name=" + name);
+      let json = await axios.get(
+        "https://dogs-project-back-production.up.railway.app/dogs?name=" + name
+      );
       return dispatch({
         type: "GET_NAME_DOGS",
         payload: json.data, //es que lo que devuelve la ruta cuando le asigno algo por "name"
@@ -80,7 +91,9 @@ export function getNameDogs(name) {
 export function getDetail(id) {
   return async function (dispatch) {
     try {
-      var json = await axios.get("https://dogs-project-ale.herokuapp.com/dogs/" + id);
+      var json = await axios.get(
+        "https://dogs-project-back-production.up.railway.app/dogs/" + id
+      );
       return dispatch({
         type: "GET_DETAIL",
         payload: json.data,
@@ -101,7 +114,9 @@ export function cleanDetail() {
 export function deletedById(id) {
   return async function (dispatch) {
     try {
-      const json = await axios.delete("https://dogs-project-ale.herokuapp.com/deleted/" + id);
+      const json = await axios.delete(
+        "https://dogs-project-back-production.up.railway.app/deleted/" + id
+      );
       return dispatch({
         type: "DELETED_BY_ID",
         payload: json.data,
